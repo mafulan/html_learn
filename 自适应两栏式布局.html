@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>自适应两栏式布局</title>
+    <style>
+        .parent{
+        width:80%;
+        border: 2px green solid;
+        margin: 0 auto;
+    }
+    .left{
+        width: 300px;
+        height: 400px;
+        background-color: yellow;
+        float: left;
+    }
+    .right{
+        height: 500px;
+        background-color: red;
+        /* 转成bfc盒子 */
+        /*因为BFC的区域不会发生重叠 */
+        overflow: hidden;
+    }
+    </style>
+</head>
+<body>
+    <div class="parent clearfix">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+</body>
+</html>

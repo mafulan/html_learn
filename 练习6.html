@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>透明度</title>
+    <style>
+        .opacity1,.opacity2{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+        .opacity1>div,.opacity2>div{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+
+        }
+        .opacity1{
+            background-color: rgba(255,0,0,0.5);
+        }
+        .opacity2{
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="opacity1">
+        <div></div>
+    
+    </div>
+    <div class="opacity2">
+        <div></div>
+    </div>
+    <!-- 元素透明和visibility隐藏元素的位置依然保留 -->
+</body>
+</html>

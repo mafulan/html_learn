@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="common.css">
+    <style>
+        .nav{
+            width: 802px;
+            height: 35px;
+            background-color: gray;
+            margin: 0 auto;
+            border: 1px gray solid;
+        }
+        .nav li{
+            width: 100px;
+            float: left;
+        }
+        .nav a{
+            display: block;
+            height: 35px;
+            font-size: 13px;
+            color: aqua;
+            text-align: center;
+            line-height: 35px;
+            
+        }
+        .nav a:hover{
+            color: white;
+            background-color: red;
+
+        }
+        .parent{
+            width: 802px;
+            margin: 0 auto;
+            border: 1px #9a99ff solid;
+         }
+        .box1{
+            width: 400px;
+            height: 250px;
+            background-color: #66cbff; 
+            float: left;
+        }
+        .box2{
+            width: 400px;
+            height: 250px;
+            background-color: #cdcc00;
+            float: right;
+            }
+            .box3{
+                width: 299px;
+                height: 180px;
+                background-color: #ff00ff;
+                float: left;
+                margin-right: 10px;
+
+            }
+            .box4{
+                width:200px ;
+                height:180px ;
+                background-color:#9afe66 ;
+                float: left;
+                margin-right: 10px;
+            }
+            .box5{
+                width:280px ;
+                height:180px ;
+                background-color:#ffff33 ;
+                float: left;
+            }
+            .parent2{
+                width:802px ;
+                height:160px ;
+                background-color:#9966ff ;
+                margin: 0 auto;
+                position: relative;
+                border: 1px #b299c3 solid;
+                }
+                .parent2 .son{
+                    width:600px;
+                    height: 40px;
+                    background-color: #ff00ff;
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+
+                }
+                .son li{
+                    width: 100px;
+                    float: left;
+                    text-align: center;
+                    line-height: 40px;
+                }
+                .son a{
+                    font-size: 18px;
+                    color: #0198cd;
+                    }
+                    .son a:hover{
+                        color: aliceblue;
+                    }
+                    .parent2 p{
+                        padding-left: 62px;
+                        padding-top: 110px;
+                        font-size: 18px;
+                        font-weight: bold;
+                    }
+                    .parent3{
+                        width: 402px;
+                        height: 202px;
+                        background-color: #01ffcd;
+                        margin: 0 auto;
+                        border: 1px #019934 solid;
+                        
+                        
+                    }
+                    .son1{
+                        width: 200px;
+                        height: 40px;
+                        background-color: #00cccb;
+                        font-size: 14px;
+                        
+                        text-align: center;
+                        line-height: 40px;
+                        float: left;
+
+                    }
+                    .son2{
+                        width: 200px;
+                        height: 40px;
+                        background-color: #00cccb;
+                        font-size: 14px;
+                        
+                        text-align: center;
+                        line-height: 40px;
+                        float: right;
+                    }
+                    .son3{
+                        width: 200px;
+                        height: 120px;
+                        background-color: #014655;
+                        margin-left: 20px;
+                        margin-top: 60px;
+                   }
+
+
+    </style>
+</head>
+<body>
+  <ul class="nav clearfix">
+      <li><a href="#">首页</a></li>
+      <li><a href="#">首页</a></li>
+      <li><a href="#">首页</a></li>
+      <li><a href="#">首页</a></li>
+      <li><a href="#">首页</a></li>
+      <li><a href="#">首页</a></li>
+      <li><a href="#">首页</a></li>
+      <li><a href="#">首页</a></li>
+  </ul> 
+  <div class="parent clearfix">
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5"></div>
+</div>
+<div class="parent2">
+    <p>logo</p>
+    <ul class="son clearfix">
+        <li><a href="#">帮助</a></li>
+        <li><a href="#">帮助</a></li>
+        <li><a href="#">帮助</a></li>
+        <li><a href="#">帮助</a></li>
+        <li><a href="#">帮助</a></li>
+        <li><a href="#">帮助</a></li>
+    </ul>
+
+</div>
+<div class="parent3 clearfix">
+    <div class="son1">标题</div>
+    <div class="son2">说明</div>
+    <div class="son3"></div>
+</div>
+</body>
+</html>

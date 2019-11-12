@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>布局练习</title>
+    <link rel="stylesheet" href="common.css">
+    <style>
+    .header,.footer{
+        width:662px;
+        height:82px;
+        border:1px #000 solid;
+        text-align: center;
+        line-height: 80px;
+        font-size: 12px;
+        /* 区块元素居中 */
+        margin:0 auto; 
+    }
+    .left{
+        width:200px;
+        height:450px;
+        background-color: #fff001;
+        /* 字体水平居中 */
+        text-align: center;
+        line-height: 450px;
+        font-size: 12px;
+        float:left;
+
+    }
+    .main{
+        width:662px;
+        border:1px #000 solid;
+        margin: 10px auto;
+
+    }
+    .right{
+        width:450px;
+        height:450px;
+        background-color: #ffff01;
+        text-align: center;
+        line-height: 450px;
+        font-size: 12px;
+        float:right;
+
+    }
+    </style>
+</head>
+<body>
+    <div class="header">顶部</div>
+    <div class="main clearfix">
+        <div class="left">页面左侧</div>
+        <div class="right">页面主体内容</div>
+ </div>
+    <div class="footer">底部</div>
+</body>
+</html>

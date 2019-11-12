@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>浮动练习</title>
+    <style>
+        ul{
+            
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            width:520px;
+            background-color: gray;
+        }
+        ul::after{
+            display: block;
+            content: "";
+            clear: both;
+        }
+    li{
+        width:120px;
+        height:100px;
+        margin-right:10px;
+        margin-bottom:10px;
+        background-color:red;
+        float: left;
+    } 
+    
+    </style>
+</head>
+<body>
+    <!-- 去掉内联块元素之间换行符的一种方法：
+         1将后面的内联块元素设置左外边距负值，为父元素字体大小的0.25倍 -->
+    <!-- 2去掉换行符：删除或用注释符代替 -->
+    <!-- 3设置父元素字间距为-0.25em，在子元素里重新设置字间距0 -->  
+    <!-- 4将父元素的字体大小设置为0，在子元素里重新设置字体大小  -->
+
+    <!-- 浮动 -->
+    <!-- 解决父元素高度崩塌的方法：1给父元素设置高度-- -->
+    <!-- 局限：1不确定高度时无法使用  2在内容数量不确定时也无法使用 -->
+    <!-- 方法2：将父元素设置为bfc盒子（不能用浮动可以用overflow:hidden） -->
+    <!-- 局限：在父元素有溢出部分时无法使用 -->
+    <!-- 方法3：清除浮动的方法：为所有浮动的元素后面设置一个空元素，在里面设置清除浮动  style="display:block;                clear:both;" -->
+    <!-- 局限 ：创建了一个没有意义的空标签 -->
+    <!-- 最优方法：为父元素设置伪元素after ，在该元素上设置清除浮动-->
+    <!-- 局限：低版本的IE浏览器不识别 -->
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+</body>
+</html>
